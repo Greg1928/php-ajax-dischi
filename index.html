@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="disk in disks">
+                <p>{{disk.poster}}</p> 
+                <p>{{disk.title}}</p>
+                <p>{{disk.author}}</p>
+                <p>{{disk.genre}}</p>
+                <p>{{disk.year}}</p>
+                <hr>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
