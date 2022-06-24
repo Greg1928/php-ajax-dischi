@@ -11,6 +11,13 @@ require_once __DIR__ . '/database.php';
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+        <?php foreach ($database as $info) { ?>
+            <?php foreach ($info as $data) { ?>
+                <li><?php echo $data ?></li>
+            <?php } ?>
+            <hr>
+        <?php } ?>
+    </ul>
 </body>
 </html>
