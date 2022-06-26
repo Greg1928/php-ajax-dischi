@@ -11,16 +11,23 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="disk in disks">
-                <p>{{disk.poster}}</p> 
-                <p>{{disk.title}}</p>
-                <p>{{disk.author}}</p>
-                <p>{{disk.genre}}</p>
-                <p>{{disk.year}}</p>
-                <hr>
-            </li>
-        </ul>
+        <header>
+            <div class="header-content">
+                <img src="img/spotify-logo.png" alt="">
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card" v-for="disk in disks">
+                    <div class="content">
+                        <img :src="disk.poster" :alt="disk.title">
+                        <h5>{{disk.title}}</h5>
+                        <div class="author">{{disk.author}}</div>
+                        <div class="year">{{disk.year}}</div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
 

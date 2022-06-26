@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 5rem;
+    background-color: #2e3a46;
+}
+.header-content img{
+    height: 3rem;
+    margin: 1rem;
+}   
+
+main{
+    background-color: #1e2d3b;
+    height: calc(100vh - 80px);
+    overflow: auto;  
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 80px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content img{
+    width: 100%;
+    padding: 15px;
+}
+
+.card{
+    width: calc(100% / 6 - 1rem);
+    background-color: #2e3a46;
+}
+
+h5{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 15px;
+}
+.author, .year{
+    color: #808080;
+}
+.year{
+    margin-bottom: 10px;
+}
